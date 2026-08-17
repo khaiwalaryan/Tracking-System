@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Registration Chatbot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>College Student Registration Bot</h1>
+      <p>Chat assistant for quick student registration</p>
+    </header>
+
+    <section class="chat-card" aria-label="Registration chatbot">
+      <div id="chatWindow" class="chat-window" aria-live="polite"></div>
+
+      <form id="chatForm" class="chat-form" autocomplete="off">
+        <input
+          id="userInput"
+          type="text"
+          placeholder="Type your answer here..."
+          aria-label="Your message"
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="actions">
+        <button id="restartBtn" type="button" class="secondary">Restart Registration</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
